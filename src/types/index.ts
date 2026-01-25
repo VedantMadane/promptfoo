@@ -315,6 +315,7 @@ export interface EvaluateResult {
   gradingResult?: GradingResult | null;
   namedScores: Record<string, number>;
   cost?: number;
+  // biome-ignore lint/suspicious/noExplicitAny: Metadata stores arbitrary key-value pairs accessed with dot notation
   metadata?: Record<string, any>;
   tokenUsage?: Required<TokenUsage>;
 }
@@ -325,6 +326,7 @@ export interface EvaluateTableOutput {
   gradingResult?: GradingResult | null;
   id: string;
   latencyMs: number;
+  // biome-ignore lint/suspicious/noExplicitAny: Metadata stores arbitrary key-value pairs accessed with dot notation
   metadata?: Record<string, any>;
   namedScores: Record<string, number>;
   pass: boolean;
@@ -461,10 +463,12 @@ export interface GradingResult {
     renderedAssertionValue?: string;
     // Full grading prompt sent to the grading LLM (for debugging)
     renderedGradingPrompt?: string;
+    // biome-ignore lint/suspicious/noExplicitAny: Assertion metadata stores arbitrary provider-specific values
     [key: string]: any;
   };
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: Type guard requires any parameter for flexibility
 export function isGradingResult(result: any): result is GradingResult {
   return (
     typeof result === 'object' &&
@@ -636,6 +640,7 @@ export interface AssertionValueFunctionContext {
   vars: Record<string, VarValue>;
   test: AtomicTestCase;
   logProbs: number[] | undefined;
+  // biome-ignore lint/suspicious/noExplicitAny: Config accepts arbitrary provider-specific options
   config?: Record<string, any>;
   provider: ApiProvider | undefined;
   providerResponse: ProviderResponse | undefined;
