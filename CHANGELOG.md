@@ -6,27 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.120.18](https://github.com/promptfoo/promptfoo/compare/0.120.17...0.120.18) (2026-01-26)
 
-
 ### Features
 
-* **redteam:** add early CLI error for missing sharp dependency ([#7222](https://github.com/promptfoo/promptfoo/issues/7222)) ([f518b39](https://github.com/promptfoo/promptfoo/commit/f518b39637937a95c6f92a72f3870e26bec50077))
-* **xai:** add websocketUrl override and expose function calls in voice provider ([#7217](https://github.com/promptfoo/promptfoo/issues/7217)) ([5865735](https://github.com/promptfoo/promptfoo/commit/5865735be1348d317bf793383a5bdf409aea2031))
-
+- **redteam:** add early CLI error for missing sharp dependency ([#7222](https://github.com/promptfoo/promptfoo/issues/7222)) ([f518b39](https://github.com/promptfoo/promptfoo/commit/f518b39637937a95c6f92a72f3870e26bec50077))
+- **xai:** add websocketUrl override and expose function calls in voice provider ([#7217](https://github.com/promptfoo/promptfoo/issues/7217)) ([5865735](https://github.com/promptfoo/promptfoo/commit/5865735be1348d317bf793383a5bdf409aea2031))
 
 ### Bug Fixes
 
-* **deps:** update dependency @modelcontextprotocol/sdk to ^1.25.3 ([#7268](https://github.com/promptfoo/promptfoo/issues/7268)) ([45e82e7](https://github.com/promptfoo/promptfoo/commit/45e82e73877de890a5848b3c86a1335b50324b7d))
-* **deps:** update dependency @opencode-ai/sdk to ^1.1.26 ([#7248](https://github.com/promptfoo/promptfoo/issues/7248)) ([597abe0](https://github.com/promptfoo/promptfoo/commit/597abe079c5e665f7dad2c583cafd69a5bd9da18))
-* **deps:** update dependency @opencode-ai/sdk to ^1.1.28 ([#7253](https://github.com/promptfoo/promptfoo/issues/7253)) ([d689b01](https://github.com/promptfoo/promptfoo/commit/d689b011497987a0faad07b8ad74b0f06070eecb))
-* **deps:** update dependency keyv to ^5.6.0 ([#7269](https://github.com/promptfoo/promptfoo/issues/7269)) ([0135f8c](https://github.com/promptfoo/promptfoo/commit/0135f8c8b03aec40ef1d2a845e6ebcd8e6017a92))
-* **deps:** update dependency lightningcss to ^1.31.0 ([#7251](https://github.com/promptfoo/promptfoo/issues/7251)) ([20e4ddb](https://github.com/promptfoo/promptfoo/commit/20e4ddb39ca6d6966d0107c069716e64d340394c))
-* **deps:** update dependency lightningcss to ^1.31.1 ([#7270](https://github.com/promptfoo/promptfoo/issues/7270)) ([f41fc9e](https://github.com/promptfoo/promptfoo/commit/f41fc9e413671ef185b3e6e81b0adea154aeb7ea))
-* **deps:** update dependency ora to ^9.1.0 ([#7271](https://github.com/promptfoo/promptfoo/issues/7271)) ([0d98bf6](https://github.com/promptfoo/promptfoo/commit/0d98bf6d6a0cedbb46007da0781fa27f55b9c8ae))
-* **deps:** update dependency posthog-node to ~5.21.2 ([#7242](https://github.com/promptfoo/promptfoo/issues/7242)) ([8e8864c](https://github.com/promptfoo/promptfoo/commit/8e8864c85457cd3cea8080717a67a1da58ef59f8))
-* **deps:** update openai packages ([#7227](https://github.com/promptfoo/promptfoo/issues/7227)) ([8d59146](https://github.com/promptfoo/promptfoo/commit/8d59146f248e05650c58dcffe16398d1ec87ddb9))
-* **providers:** make @huggingface/transformers an optional dependency ([#7261](https://github.com/promptfoo/promptfoo/issues/7261)) ([4cda786](https://github.com/promptfoo/promptfoo/commit/4cda7861054e73aa2d7c0df069cf73c673261173))
-* **redteam:** fix filter panel errors in Report component ([#7250](https://github.com/promptfoo/promptfoo/issues/7250)) ([45a3676](https://github.com/promptfoo/promptfoo/commit/45a367640e740a2a0382086aa2b40f83950d8e98))
-* **redteam:** make sharp availability tests deterministic ([#7232](https://github.com/promptfoo/promptfoo/issues/7232)) ([0fa9023](https://github.com/promptfoo/promptfoo/commit/0fa9023baa3df3437150de1a8478cd96f6833670))
+- **deps:** update dependency @modelcontextprotocol/sdk to ^1.25.3 ([#7268](https://github.com/promptfoo/promptfoo/issues/7268)) ([45e82e7](https://github.com/promptfoo/promptfoo/commit/45e82e73877de890a5848b3c86a1335b50324b7d))
+- **deps:** update dependency @opencode-ai/sdk to ^1.1.26 ([#7248](https://github.com/promptfoo/promptfoo/issues/7248)) ([597abe0](https://github.com/promptfoo/promptfoo/commit/597abe079c5e665f7dad2c583cafd69a5bd9da18))
+- **deps:** update dependency @opencode-ai/sdk to ^1.1.28 ([#7253](https://github.com/promptfoo/promptfoo/issues/7253)) ([d689b01](https://github.com/promptfoo/promptfoo/commit/d689b011497987a0faad07b8ad74b0f06070eecb))
+- **deps:** update dependency keyv to ^5.6.0 ([#7269](https://github.com/promptfoo/promptfoo/issues/7269)) ([0135f8c](https://github.com/promptfoo/promptfoo/commit/0135f8c8b03aec40ef1d2a845e6ebcd8e6017a92))
+- **deps:** update dependency lightningcss to ^1.31.0 ([#7251](https://github.com/promptfoo/promptfoo/issues/7251)) ([20e4ddb](https://github.com/promptfoo/promptfoo/commit/20e4ddb39ca6d6966d0107c069716e64d340394c))
+- **deps:** update dependency lightningcss to ^1.31.1 ([#7270](https://github.com/promptfoo/promptfoo/issues/7270)) ([f41fc9e](https://github.com/promptfoo/promptfoo/commit/f41fc9e413671ef185b3e6e81b0adea154aeb7ea))
+- **deps:** update dependency ora to ^9.1.0 ([#7271](https://github.com/promptfoo/promptfoo/issues/7271)) ([0d98bf6](https://github.com/promptfoo/promptfoo/commit/0d98bf6d6a0cedbb46007da0781fa27f55b9c8ae))
+- **deps:** update dependency posthog-node to ~5.21.2 ([#7242](https://github.com/promptfoo/promptfoo/issues/7242)) ([8e8864c](https://github.com/promptfoo/promptfoo/commit/8e8864c85457cd3cea8080717a67a1da58ef59f8))
+- **deps:** update openai packages ([#7227](https://github.com/promptfoo/promptfoo/issues/7227)) ([8d59146](https://github.com/promptfoo/promptfoo/commit/8d59146f248e05650c58dcffe16398d1ec87ddb9))
+- **providers:** make @huggingface/transformers an optional dependency ([#7261](https://github.com/promptfoo/promptfoo/issues/7261)) ([4cda786](https://github.com/promptfoo/promptfoo/commit/4cda7861054e73aa2d7c0df069cf73c673261173))
+- **redteam:** fix filter panel errors in Report component ([#7250](https://github.com/promptfoo/promptfoo/issues/7250)) ([45a3676](https://github.com/promptfoo/promptfoo/commit/45a367640e740a2a0382086aa2b40f83950d8e98))
+- **redteam:** make sharp availability tests deterministic ([#7232](https://github.com/promptfoo/promptfoo/issues/7232)) ([0fa9023](https://github.com/promptfoo/promptfoo/commit/0fa9023baa3df3437150de1a8478cd96f6833670))
 
 ## [0.120.17](https://github.com/promptfoo/promptfoo/compare/0.120.16...0.120.17) (2026-01-23)
 
